@@ -1,17 +1,36 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>Inicio</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+<ion-content class="card-background-page grid-basic-page">
+  <ion-card>
+    <img class="header" src="assets/imgs/iagora.jpg" />
+    <div class="card-title">Iagora?</div>
+
+    <div class="card-subtitle">Cozinhe gastando pouco.</div>
+  </ion-card>
+
+  <ion-card-content>
+    <p>Sit on human damn that dog and lick sellotape eat half my food and ask for more, stare out the window.</p>
+  </ion-card-content>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <img src="assets/imgs/ovo_cozido.jpg" />
+      </ion-col>
+      <ion-col>
+        <img src="assets/imgs/macarrao.jpg" />
+      </ion-col>
+      <ion-col>
+        <img src="assets/imgs/pizza-de-bolacha.jpg" />
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-content padding>
+    <button ion-button color="danger" block round>Vamos Começar! </button>
+  </ion-content>
+
 </ion-content>

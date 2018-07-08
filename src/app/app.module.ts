@@ -3,8 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
-import { AboutPage } from '../pages/about/about';
-import { ContactPage } from '../pages/contact/contact';
+import { RecepiesPage } from '../pages/recepies/recepies';
+import { IngredientsPage } from '../pages/ingredients/ingredients';
+import { ListIngredientsPage } from '../pages/ingredients/list-ingredients/list-ingredients';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 
@@ -14,10 +15,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 @NgModule({
   declarations: [
     MyApp,
-    AboutPage,
-    ContactPage,
+    RecepiesPage,
+    IngredientsPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    ListIngredientsPage
   ],
   imports: [
     BrowserModule,
@@ -25,9 +27,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ],
   bootstrap: [IonicApp],
   entryComponents: [
+    ListIngredientsPage,
     MyApp,
-    AboutPage,
-    ContactPage,
+    RecepiesPage,
+    IngredientsPage,
     HomePage,
     TabsPage
   ],
