@@ -7,6 +7,9 @@ import {
 
 import { ListIngredientsPage } from './list-ingredients/list-ingredients';
 
+import {RecepiesPage
+} from './../recepies/recepies'; 
+
 @Component({
   selector: 'page-ingredients',
   templateUrl: 'ingredients.html'
@@ -28,5 +31,8 @@ export class IngredientsPage {
       this.setItems(data.selectedItems);
     });
     modal.present();
+  }
+  pagfim() {
+    this.navCtrl.push(RecepiesPage);
   }
 }

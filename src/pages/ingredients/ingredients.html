@@ -1,12 +1,12 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-        Lista de Ingredientes
+      Ingredientes
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding>
         
   <ion-fab right top>
       <button (click)="openModal()" ion-fab color="secondary"><ion-icon name="add"></ion-icon></button>
@@ -18,5 +18,6 @@
             </ion-item>
         
           </ion-list>
+ <button (click)="pagfim()" ion-button color="defalt" block round>Gerar Receita! </button>        
 </ion-content>
  

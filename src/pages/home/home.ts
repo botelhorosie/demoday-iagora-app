@@ -20,7 +20,7 @@ export class HomePage {
 
 
   }
-  ngOnInit() {
+  mudarpag() {
     this.navCtrl.push(IngredientsPage);
   }
 
